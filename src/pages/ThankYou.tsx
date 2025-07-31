@@ -11,10 +11,16 @@ const ThankYou = () => {
           <CardContent className="p-12">
             <div className="mb-8">
               <CheckCircle className="w-20 h-20 text-accent mx-auto mb-6" />
-              <h1 className="text-4xl font-bold text-primary mb-4">You're In!</h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                You'll receive a confirmation email shortly with your Zoom call link and preparation instructions.
+              <h1 className="text-4xl font-bold text-primary mb-4">Schedule Your Call</h1>
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Thank you for booking! Now pick a time for your 30-minute Zoom call using the calendar below.
               </p>
+              
+              <div className="bg-accent/10 rounded-lg p-8 mb-8">
+                <p className="text-lg text-muted-foreground">
+                  [Calendly embed goes here]
+                </p>
+              </div>
             </div>
 
             <div className="space-y-4 mb-8">
@@ -52,9 +58,9 @@ const ThankYou = () => {
 
             <div className="mt-8 pt-8 border-t border-border">
               <p className="text-sm text-muted-foreground">
-                Questions? Email us at{" "}
-                <a href="mailto:support@walkingoutofchaos.com" className="text-accent hover:underline">
-                  support@walkingoutofchaos.com
+                Need help? Email{" "}
+                <a href="mailto:jimmy@walkingoutofchaos.com" className="text-accent hover:underline">
+                  jimmy@walkingoutofchaos.com
                 </a>
               </p>
             </div>

@@ -20,8 +20,12 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Book a 30-minute coaching call and get a personalized reset ritual to transform your focus and life.
           </p>
-          <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold">
-            <Link to="/book">Book My Reset Call</Link>
+          <Button 
+            onClick={() => window.open('https://buy.stripe.com/eVq3coej3cf79I02wZ7ss00', '_blank')}
+            size="lg" 
+            className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold"
+          >
+            Book My Reset Call — $29.99
           </Button>
         </div>
       </section>
