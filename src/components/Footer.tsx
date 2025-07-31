@@ -100,6 +100,24 @@ const Footer = () => {
           <p className="text-white/60 text-sm">
             © 2024 Walking Out of Chaos. All rights reserved.
           </p>
+          
+          {/* Legal Links */}
+          <div className="mt-4 pb-4">
+            <div className="flex justify-center gap-6 text-sm">
+              <Link 
+                to="/terms-of-service" 
+                className="text-white/60 hover:text-white/80 transition-colors"
+              >
+                Terms of Service
+              </Link>
+              <Link 
+                to="/privacy-policy" 
+                className="text-white/60 hover:text-white/80 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
