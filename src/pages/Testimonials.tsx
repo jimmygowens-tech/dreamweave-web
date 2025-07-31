@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+
 import { Star, Quote } from "lucide-react";
 
 const Testimonials = () => {
@@ -136,8 +136,13 @@ const Testimonials = () => {
             Join hundreds of others who have transformed their relationship with ADHD, overwhelm, and burnout. 
             Your breakthrough is just one conversation away.
           </p>
-          <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold">
-            <Link to="/book">Start Your Transformation - $29.99</Link>
+          <Button 
+            onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+            size="lg" 
+            className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold"
+            aria-label="Book coaching call"
+          >
+            Book My Reset Call – $29.99
           </Button>
         </div>
       </div>

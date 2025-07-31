@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const BookCall = () => {
   const handleBookCall = () => {
-    window.open('https://buy.stripe.com/cNi6oA7UFgvn5rKdbD7ss02', '_blank');
+    window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank');
   };
 
   return (
@@ -23,8 +23,9 @@ const BookCall = () => {
           onClick={handleBookCall}
           size="lg" 
           className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold"
+          aria-label="Book coaching call"
         >
-          Book My Reset Call — $29.99
+          Book My Reset Call – $29.99
         </Button>
       </div>
     </div>

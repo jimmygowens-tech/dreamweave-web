@@ -194,8 +194,13 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-6">
                   Skip the contact form and book your reset call directly.
                 </p>
-                <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-primary font-semibold">
-                  <a href="/book">Book My Reset Call - $29.99</a>
+                <Button 
+                  onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-primary font-semibold"
+                  aria-label="Book coaching call"
+                >
+                  Book My Reset Call – $29.99
                 </Button>
               </CardContent>
             </Card>

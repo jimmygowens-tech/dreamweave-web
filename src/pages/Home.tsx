@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+
 import heroImage from "@/assets/hero-image.jpg";
 
 const Home = () => {
@@ -21,9 +21,10 @@ const Home = () => {
             Book a 30-minute coaching call and get a personalized reset ritual to transform your focus and life.
           </p>
           <Button 
-            onClick={() => window.open('https://buy.stripe.com/cNi6oA7UFgvn5rKdbD7ss02', '_blank')}
+            onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
             size="lg" 
             className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold"
+            aria-label="Book coaching call"
           >
             Book My Reset Call – $29.99
           </Button>
@@ -87,8 +88,14 @@ const Home = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
             Your transformation starts with a single conversation. Book your reset call today.
           </p>
-          <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4 h-auto">
-            <Link to="/book">Start Your Journey - $29.99</Link>
+          <Button 
+            onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+            size="lg" 
+            variant="secondary" 
+            className="text-lg px-8 py-4 h-auto"
+            aria-label="Book coaching call"
+          >
+            Book My Reset Call – $29.99
           </Button>
         </div>
       </section>

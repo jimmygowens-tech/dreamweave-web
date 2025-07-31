@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+
 
 const About = () => {
   return (
@@ -32,8 +32,13 @@ const About = () => {
               Now I coach others through the same transformation. Because if someone like me — who felt 
               completely lost and overwhelmed — can walk out of chaos, so can you.
             </p>
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-primary">
-              <Link to="/book">Work With Me</Link>
+            <Button 
+              onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-primary"
+              aria-label="Book coaching call"
+            >
+              Book My Reset Call – $29.99
             </Button>
           </div>
         </div>
@@ -100,8 +105,13 @@ const About = () => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Book your reset call today and take the first step toward building a life that works with your brain, not against it.
           </p>
-          <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary">
-            <Link to="/book">Book My Reset Call</Link>
+          <Button 
+            onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+            size="lg" 
+            className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary"
+            aria-label="Book coaching call"
+          >
+            Book My Reset Call – $29.99
           </Button>
         </div>
       </div>

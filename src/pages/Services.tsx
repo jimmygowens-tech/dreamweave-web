@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+
 import { Brain, Repeat, Shield, User, Smartphone } from "lucide-react";
 
 const Services = () => {
@@ -111,8 +111,13 @@ const Services = () => {
             Your journey from chaos to clarity starts with a single conversation. Book your reset call and begin building 
             a system that finally works for your unique brain.
           </p>
-          <Button asChild size="lg" className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold">
-            <Link to="/book">Book Your Reset Call - $29.99</Link>
+          <Button 
+            onClick={() => window.open('https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03', '_blank')}
+            size="lg" 
+            className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold"
+            aria-label="Book coaching call"
+          >
+            Book My Reset Call – $29.99
           </Button>
         </div>
       </div>
