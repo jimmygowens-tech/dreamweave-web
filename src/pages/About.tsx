@@ -14,11 +14,15 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            {/* Photo placeholder */}
-            <div className="aspect-square bg-muted rounded-2xl flex items-center justify-center text-muted-foreground">
-              <span className="text-lg">Jimmy Gowens Photo</span>
-            </div>
+          <div className="px-4">
+            <img 
+              src="/lovable-uploads/aba0c3aa-15d9-4802-8ee1-d7c19039983a.png" 
+              alt="Jimmy Gowens and his wife"
+              className="w-full max-w-[350px] h-auto rounded-xl shadow-md"
+            />
+            <p className="text-sm text-muted-foreground mt-2 text-center">
+              Jimmy Gowens – Founder of Walking Out of Chaos
+            </p>
           </div>
           
           <div className="space-y-6">
