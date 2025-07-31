@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Instagram, Facebook, MessageCircle } from "lucide-react";
+import { Mail, Instagram, Facebook, MessageCircle, Phone } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -111,11 +111,24 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-primary">Email</p>
                       <a 
-                        href="mailto:support@walkingoutofchaos.com" 
+                        href="mailto:jimmy@walkingoutofchaos.com" 
                         className="text-muted-foreground hover:text-accent transition-colors"
                       >
-                        support@walkingoutofchaos.com
+                        jimmy@walkingoutofchaos.com
                       </a>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <Phone className="w-6 h-6 text-accent" />
+                    <div>
+                      <p className="font-medium text-primary">Call or Text</p>
+                      <a 
+                        href="tel:+15551234567" 
+                        className="text-muted-foreground hover:text-accent transition-colors"
+                      >
+                        (555) 123-4567
+                      </a>
+                      <p className="text-sm text-muted-foreground/70">Business line only — powered by GoDaddy</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
