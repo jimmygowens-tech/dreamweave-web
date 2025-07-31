@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const BookCall = () => {
   const handleBookCall = () => {
-    window.open('https://buy.stripe.com/eVq3coej3cf79I02wZ7ss00', '_blank');
+    window.open('https://buy.stripe.com/cNi6oA7UFgvn5rKdbD7ss02', '_blank');
   };
 
   return (
