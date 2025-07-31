@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import BookCall from "./pages/BookCall";
 import ThankYou from "./pages/ThankYou";
+import PaymentSuccess from "./pages/PaymentSuccess";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Testimonials from "./pages/Testimonials";
@@ -29,6 +30,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/book" element={<BookCall />} />
+            <Route path="/payment-success" element={<PaymentSuccess />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
