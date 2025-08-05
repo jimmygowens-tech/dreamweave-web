@@ -123,12 +123,12 @@ const Contact = () => {
                     <div>
                       <p className="font-medium text-primary">Call or Text</p>
                       <a 
-                        href="tel:+15551234567" 
+                        href="tel:+12819405408" 
                         className="text-muted-foreground hover:text-accent transition-colors"
                       >
-                        (555) 123-4567
+                        (281) 940-5408
                       </a>
-                      <p className="text-sm text-muted-foreground/70">Business line only — powered by GoDaddy</p>
+                      <p className="text-sm text-muted-foreground/70">Business line only — Text-friendly</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
