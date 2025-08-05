@@ -24,24 +24,24 @@ const PaymentSuccess = () => {
           
           <div className="mb-8">
             <Button 
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://walkingoutofchaos.com/downloads/Chaos%20Reset%20Ritual.pdf', '_blank')}
               size="lg"
               className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold mb-4"
               aria-label="Download PDF booklet"
             >
               <Download className="w-5 h-5 mr-2" />
-              Download Your Focus Reset Booklet
+              Download Your Chaos Reset Ritual (PDF)
             </Button>
             
             <p className="text-sm text-muted-foreground">
-              Can't wait for the redirect? 
+              If you're not redirected, 
               <a 
                 href="https://calendly.com/jimmy-walkingoutofchaos/30min" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 underline ml-1"
               >
-                Book your call manually here
+                click here to book manually
               </a>
             </p>
           </div>
