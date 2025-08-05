@@ -160,7 +160,7 @@ const Contact = () => {
                   </a>
                   
                   <a 
-                    href="https://tiktok.com/@walkingoutofchaos" 
+                    href="https://www.tiktok.com/@walking_out_of_chaos" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 rounded-lg hover:bg-accent/10 transition-colors group"
@@ -168,7 +168,7 @@ const Contact = () => {
                     <MessageCircle className="w-6 h-6 text-accent group-hover:scale-110 transition-transform" />
                     <div>
                       <p className="font-medium text-primary">TikTok</p>
-                      <p className="text-muted-foreground">@walkingoutofchaos</p>
+                      <p className="text-muted-foreground">@walking_out_of_chaos</p>
                     </div>
                   </a>
 
