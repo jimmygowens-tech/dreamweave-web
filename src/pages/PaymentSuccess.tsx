@@ -24,7 +24,7 @@ const PaymentSuccess = () => {
           
           <div className="mb-8">
             <Button 
-              onClick={() => window.open('https://walkingoutofchaos.com/downloads/Chaos%20Reset%20Ritual.pdf', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1q_tpdtGG0hiU63mT_oRoLI7TQ-NUZ_76/view?usp=sharing', '_blank')}
               size="lg"
               className="text-lg px-8 py-4 h-auto bg-accent hover:bg-accent/90 text-primary font-semibold mb-4"
               aria-label="Download PDF booklet"
