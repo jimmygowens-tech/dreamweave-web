@@ -58,9 +58,14 @@ const Footer = () => {
               <Link to="/contact" className="block text-white/80 hover:text-accent transition-colors">
                 Contact
               </Link>
-              <Link to="/book" className="block text-white/80 hover:text-accent transition-colors">
+              <a 
+                href="https://buy.stripe.com/eVq3coej3cf79I02wZ7ss00" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block text-white/80 hover:text-accent transition-colors"
+              >
                 Book Reset Call
-              </Link>
+              </a>
             </div>
           </div>
 
