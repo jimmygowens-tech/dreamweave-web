@@ -1,36 +1,10 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { Mail, Instagram, Facebook, MessageCircle, Phone } from "lucide-react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Placeholder for form submission
-    toast({
-      title: "Message Sent",
-      description: "Thank you for reaching out! We'll get back to you within 24 hours.",
-    });
-    setFormData({ name: "", email: "", message: "" });
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <div className="min-h-screen bg-background py-20">
@@ -50,44 +24,29 @@ const Contact = () => {
               <CardTitle className="text-2xl text-primary">Send Us a Message</CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-sm font-medium">Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    required
-                    className="h-12"
-                  />
-                </div>
+              <form action="https://formspree.io/f/xdoqkzyz" method="POST" className="space-y-6">
+                <Input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  className="h-12"
+                />
 
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm font-medium">Email</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    required
-                    className="h-12"
-                  />
-                </div>
+                <Input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  className="h-12"
+                />
 
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm font-medium">Message</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    required
-                    rows={5}
-                    placeholder="Tell us how we can help you..."
-                  />
-                </div>
+                <Textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                  rows={5}
+                />
 
                 <Button 
                   type="submit" 
