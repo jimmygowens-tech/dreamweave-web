@@ -1,118 +1,76 @@
 const Terms = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
+    <div className="min-h-screen bg-background py-20">
+      <div className="container mx-auto px-4 max-w-4xl">
         <div className="prose prose-lg max-w-none">
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Terms of Service
-          </h1>
+          <h1 className="text-4xl font-bold text-primary mb-8">Terms of Service</h1>
           
-          <p className="text-muted-foreground mb-8 font-medium">
-            <strong>Last Updated: August 6, 2025</strong>
+          <p className="text-lg text-muted-foreground mb-8">
+            <strong>Effective Date:</strong> August 6, 2025
           </p>
-          
-          <p className="text-foreground mb-8">
-            Welcome to Walking Out of Chaos. By accessing or using this website, products, or services, you agree to be bound by these Terms of Service.
+
+          <p className="text-lg text-muted-foreground mb-8">
+            Welcome to Walking Out of Chaos. By accessing or using our website, products, coaching services, or digital materials, you agree to be bound by the following terms and conditions. If you do not agree with any of these terms, please do not use our services.
           </p>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              1. INTRODUCTION
-            </h3>
-            <p className="text-foreground">
-              Walking Out of Chaos ("we," "us," "our") provides coaching, educational materials, and digital downloads designed to support individuals, including those with ADHD. These Terms govern your use of walkingoutofchaos.com and any products purchased through the site.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              2. DIGITAL PRODUCT USE
-            </h3>
-            <p className="text-foreground">
-              Upon purchase, you are granted a non-exclusive, non-transferable license to access the Chaos Reset Ritual and any additional materials. These are intended for personal, non-commercial use only. You may not share, redistribute, or resell any part of our content without prior written permission.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              3. NO REFUND POLICY
-            </h3>
-            <p className="text-foreground">
-              All purchases are final. Due to the instant-access nature of digital goods, <strong>we do not offer refunds, returns, or exchanges under any circumstances</strong>. By completing your purchase, you acknowledge and accept this no-refund policy.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              4. PAYMENT PROCESSING
-            </h3>
-            <p className="text-foreground">
-              Payments are securely processed via Stripe and/or Stan Store. We do not store full payment information on our servers.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              5. RESULTS DISCLAIMER
-            </h3>
-            <p className="text-foreground">
-              Walking Out of Chaos does not guarantee specific outcomes. While our tools are built from science-backed strategies, success depends on individual effort and consistency.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              6. INTELLECTUAL PROPERTY
-            </h3>
-            <p className="text-foreground">
-              All content, branding, and materials are protected under U.S. copyright and intellectual property laws. Unauthorized use or reproduction is strictly prohibited.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              7. MODIFICATIONS
-            </h3>
-            <p className="text-foreground">
-              We may update these Terms at any time. Continued use of the website after updates constitutes acceptance.
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              8. CONTACT
-            </h3>
-            <p className="text-foreground">
-              For questions or support: <a href="mailto:support@walkingoutofchaos.com" className="text-primary hover:underline">support@walkingoutofchaos.com</a>
-            </p>
-          </section>
-          
-          <hr className="border-border my-8" />
-          
-          <section className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
-              9. GOVERNING LAW
-            </h3>
-            <p className="text-foreground">
-              These Terms are governed by the laws of the State of Texas, United States.
-            </p>
-          </section>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">1. Services Provided</h2>
+          <p className="text-muted-foreground mb-4">
+            Walking Out of Chaos provides digital resources, coaching services, and structured guides designed to support individuals, particularly those with ADHD, in building productive rituals and systems for success.
+          </p>
+          <p className="text-muted-foreground mb-6">
+            To purchase our core offer, visit:<br />
+            👉 <a href="https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Chaos Reset Coaching Call – $29.99</a>
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">2. User Responsibilities</h2>
+          <p className="text-muted-foreground mb-6">
+            You are responsible for providing accurate information during purchases and for maintaining the confidentiality of your account credentials.
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">3. Intellectual Property</h2>
+          <p className="text-muted-foreground mb-6">
+            All content, including text, graphics, downloads, rituals, and course materials, is owned by Walking Out of Chaos and may not be copied, reproduced, or redistributed without written permission.
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">4. No Refund Policy</h2>
+          <p className="text-muted-foreground mb-6">
+            <strong>All purchases made through Walking Out of Chaos — including digital downloads, coaching sessions, and ritual booklets — are non-refundable.</strong> Due to the digital nature of our products and services, all sales are final. By purchasing, you agree that you understand this policy.
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">5. Limitation of Liability</h2>
+          <p className="text-muted-foreground mb-6">
+            Walking Out of Chaos is not liable for any indirect, incidental, or consequential damages resulting from the use or misuse of our products or services. Our content is not a substitute for professional mental health advice.
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">6. Governing Law</h2>
+          <p className="text-muted-foreground mb-6">
+            These terms are governed by the laws of the State of Texas, United States.
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <h2 className="text-2xl font-semibold text-primary mb-4">7. Contact</h2>
+          <p className="text-muted-foreground mb-6">
+            For questions, please email: <a href="mailto:support@walkingoutofchaos.com" className="text-accent hover:underline"><strong>support@walkingoutofchaos.com</strong></a>
+          </p>
+
+          <hr className="my-8 border-border" />
+
+          <p className="text-muted-foreground">
+            View online: <a href="https://www.walkingoutofchaos.com/terms" className="text-accent hover:underline">https://www.walkingoutofchaos.com/terms</a>
+          </p>
         </div>
       </div>
     </div>
