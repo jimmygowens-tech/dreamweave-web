@@ -3,8 +3,35 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Instagram, Facebook, MessageCircle, Phone } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        form.reset();
+        setShowSuccess(true);
+      } else {
+        alert("There was an issue. Please try again.");
+      }
+    } catch (error) {
+      alert("There was an issue. Please try again.");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background py-20">
@@ -24,12 +51,17 @@ const Contact = () => {
               <CardTitle className="text-2xl text-primary">Send Us a Message</CardTitle>
             </CardHeader>
             <CardContent className="p-6">
-              <form action="https://formspree.io/f/xyzpnroe" method="POST">
+              <form action="https://formspree.io/f/xyzpnroe" method="POST" onSubmit={handleSubmit}>
                 <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '600px', width: '100%'}}>
                   <input type="text" name="name" placeholder="Your Name" required style={{padding: '12px', fontSize: '16px', border: '1px solid #ccc'}} />
                   <input type="email" name="email" placeholder="Your Email" required style={{padding: '12px', fontSize: '16px', border: '1px solid #ccc'}} />
                   <textarea name="message" placeholder="Your Message" required rows={5} style={{padding: '12px', fontSize: '16px', border: '1px solid #ccc'}}></textarea>
                   <button type="submit" style={{padding: '12px', fontSize: '16px', backgroundColor: '#000', color: '#fff', border: 'none', cursor: 'pointer'}}>Send Message</button>
+                  {showSuccess && (
+                    <div style={{display: 'block', marginTop: '20px', color: 'green', fontWeight: 'bold'}}>
+                      Thanks! Your message has been sent.
+                    </div>
+                  )}
                 </div>
               </form>
             </CardContent>
