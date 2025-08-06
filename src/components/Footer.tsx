@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold">Walking Out of Chaos</h3>
@@ -99,6 +99,22 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          {/* Legal */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-white">Legal</h4>
+            <div className="space-y-2 text-sm">
+              <Link to="/terms" className="block text-white/80 hover:text-accent transition-colors">
+                Terms of Service
+              </Link>
+              <Link to="/privacy" className="block text-white/80 hover:text-accent transition-colors">
+                Privacy Policy
+              </Link>
+              <Link to="/refund-policy" className="block text-white/80 hover:text-accent transition-colors">
+                Refund Policy
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
@@ -106,23 +122,6 @@ const Footer = () => {
             © 2024 Walking Out of Chaos. All rights reserved.
           </p>
           
-          {/* Legal Links */}
-          <div className="mt-4 pb-4">
-            <div className="flex justify-center gap-6 text-sm">
-              <Link 
-                to="/terms-of-service" 
-                className="text-white/60 hover:text-white/80 transition-colors"
-              >
-                Terms of Service
-              </Link>
-              <Link 
-                to="/privacy-policy" 
-                className="text-white/60 hover:text-white/80 transition-colors"
-              >
-                Privacy Policy
-              </Link>
-            </div>
-          </div>
         </div>
       </div>
     </footer>
