@@ -59,7 +59,7 @@ const Footer = () => {
                 Contact
               </Link>
               <a 
-                href="https://buy.stripe.com/eVq3coej3cf79I02wZ7ss00" 
+                href="https://buy.stripe.com/8x2dR25Mx92VaM4efH7ss03" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-white/80 hover:text-accent transition-colors"
